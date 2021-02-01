@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack Athon!</title>
+
+    <script src="https://kit.fontawesome.com/04aeb4c834.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" src="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <div class="breadcump"></div>
+
+    <header>
+        <div class="column1">
+            <a href="https://happycodeschool.com/">
+                <img src="assets/images/logo.png" class="logo" alt="logo happy code">
+            </a>
+
+            <div class="divisor"></div>
+            
+            <p> teste para vaga de <span>Front-end</span></p>
+        </div>
+
+        <div class="column2">
+            <a href="http://www.facebook.com/happycodebr"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCueR2zq6FH_dLRSzEfQDM1g"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://www.instagram.com/happycodebr/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://twitter.com/happycodebr"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="column1">
+            <h2>Vamos falar de estratégia, competição e <span>código</span>?</h2>
+
+            <p>Entre no jogo e participe da maior competição de empreendedorismo digital do mundo!</p>
+
+            <a href="#" class="open-modal" onclick="abrirModal()">Vamos lá</a>
+        </div>
+
+        <div class="column2">
+           <div class="borda">
+                <img src="assets/images/img1.jpg" alt="">
+           </div>
+        </div>
+    </div>
+
+    <section id="hack">
+        <div class="title">
+            <h1>Hack <br> <span>Athon!</span></h1>
+        </div>
+
+        <div class="divisor"></div>
+
+        <div class="text">
+            <h3>Entre no jogo e participe da <span>maior competição</span> de empreendedorismo digital 
+            do <span>Mundo</span>!</h3>
+        </div>
+
+        <div class="duvidas">
+            <div class="borda">
+                <div class="box">
+                    <h3>O que é Hackathon?</h3>
+                    <p>Uma maratona de tecnologia divertida e desafiadora, que quase sempre envolve programação, em que o objetivo principal
+                        é criar e apresentar uma solução para o problema proposto. Tudo isso em um curto espaço de tempo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="borda">
+                <div class="box">
+                    <h3>Mas, não é só para adultos?</h3>
+                    <p>
+                        Claro que não! Na Hackathon da Happy Code crianças a partir dos 6 anos podem e devem participar. Você deve saber
+                        o quanto as crianças são inventivas, não é mesmo?
+                    </p>
+                </div>
+            </div>
+
+            <div class="borda">
+                <div class="box">
+                    <h3>Quais são os Prêmios?</h3>
+                    <h4>São 3 grupos vencedores por categoria. Cada integrante dos grupos vencedores ganha:</h4>
+                    <div class="itens">
+                        <div class="item">
+                            <img src="assets/images/PREMIOS-xbox.png" alt="">
+                            <div class="text">
+                                <h3 class="lugar">1° Lugar</h3>
+                                <p class="lugar">Xbox One S 1Tb</p>
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <img src="assets/images/PREMIOS-tablet.png" class="tablet"alt="">
+                            <div class="text">
+                                <h3 class="lugar">2° Lugar</h3>
+                                <p class="lugar">Galaxy Tab</p>
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <img src="assets/images/PREMIOS-fone.png" class="fone" alt="">
+                            <div class="text">
+                                <h3 class="lugar">3° Lugar</h3>
+                                <p class="lugar">Fone Gamer Razer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="inscrever">
+        <h3>Inscreva-se! As vagas são <span>limitadas</span>!</h3>
+        <br>
+        <a href="#" class="open-modal" onclick="abrirModal()">Quero me inscrever!</a>
+    </div>
+
+
+    <div class="bg-modal" id="modal">
+        <div class="modal">
+            <span class="close" onclick="fecharModal()">
+                &times;
+            </span>
+
+            <h4>Os campos com * são obrigatórios!</h4>
+
+            <form action="">
+                <label>Nome*
+                    <input type="text" required>
+                </label>
+
+                <label>Email*
+                    <input type="text" required>
+                </label>
+                
+
+                <label>Telefone*
+                    <input type="text" required>
+                </label>
+
+                <button>Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

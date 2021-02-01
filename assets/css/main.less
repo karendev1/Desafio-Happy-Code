@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+//Definição de cores
+
+@blue: #2a3063;
+@yellow: #e7c363;
+@green: #7fd38f;
+@roxo: #6964aa;
+@roxo-text: #9e9eca;
+@black: #000;
+@white: #fff;
+
+// Layout
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+header{
+    background: @green;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid @roxo-text;
+    .column1{
+        display: flex;
+        align-items: center;
+        img.logo{
+            width: 90px;
+        }
+        .divisor{
+            width: 2px;
+            height: 40px;
+            background: #fff;
+            margin: 0px 20px;
+        }
+        p{
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            span{
+                color: @roxo;
+            }
+        }
+    }
+
+    .column2{
+        i{
+            color: #fff;
+            font-size: 25px;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        i:hover{
+            color: @roxo;
+        }
+    }
+}
+
+.main-content{
+    background: @white;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .column1{
+        width: 40%;
+        margin-right: 50px;
+        h2{
+            color: @green;
+            text-transform: uppercase;
+            font-size: 35px;
+            span{
+                animation: texto 2s 1;
+                color: @roxo;
+            }
+        }
+        p{
+            color: @black;
+            margin: 20px 0px 40px 0px;
+            text-transform: uppercase;
+        }
+        a{
+            color: @roxo;
+            text-decoration: none;
+            border: 2px solid @roxo;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        a:hover{
+            background: @roxo;
+            color: @white;
+        }
+
+    }
+    .column2{
+        margin-left: 60px;
+        .borda{
+            background: transparent;
+            border: 2px solid @roxo;
+            width: 350px;
+            height: 300px;
+            border-radius: 0px 40px 0px 40px;
+            img{
+                width: 330px;
+                height: 330px;
+                border-radius: 0px 40px 0px 40px;
+                position: relative;
+                top: 30px;
+                right: 50px;
+            }
+        }
+    }
+}
+
+
+@keyframes texto{
+    0%{
+        color: @black;
+        letter-spacing: 0px;
+    }
+    25%{
+        color: @roxo;
+        letter-spacing: 5px;
+    }
+    50%{
+        color: @black;
+        letter-spacing: 0px;
+    }
+    75%{
+        color: @roxo;
+        letter-spacing: 5px;
+    }
+    100%{
+        color: @roxo;
+        letter-spacing: 0px;
+    }
+}
+
+#hack{
+    background: @yellow;
+    padding: 35px 0px;
+    .title{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        h1{
+            font-family: 'Potta One', cursive;
+            text-transform: uppercase;
+            color: @white;
+            font-size: 40px;
+            span{
+                position: relative;
+                left: 40px;
+            }
+        }
+    }
+    .divisor{
+        width: 300px;
+        height: 2px;
+        background: @white;
+        margin: 0 auto;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+        h3{
+            text-align: center;
+            color: @roxo;
+            span{
+                color: @white;
+            }
+        }
+    }
+}
+
+.duvidas{
+    background: @yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    height: 480px;
+    .borda{
+        width: 350px;
+        height: 300px;
+        background: transparent;
+        border: 2px solid @roxo;
+        border-radius: 20px;
+        margin-left: 50px;
+        .box{
+            width: 300px;
+            height: 320px;
+            background: @white;
+            padding: 15px 10px 40px 10px;
+            border-radius: 20px;
+            position: relative;
+            right: 20px;
+            top: 30px;
+            
+            h3{
+                color: @roxo;
+                text-align: center;
+            }
+            h4{
+                font-size: 12px;
+                color: #7e7b7b;
+                text-align: center;
+                margin: 10px 0px;
+            }
+            p{
+                color: @roxo-text;
+                margin-top: 20px;
+                text-align: center;
+            }
+            .itens{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .item{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 100px;
+                    }
+                    img.tablet{
+                        width: 70px;
+                    }
+                    img.fone{
+                        width: 50px;
+                    }
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        h3.lugar{
+                            font-size: 16px;
+                            color: @roxo;
+                            font-weight: bold;
+                        }
+                        p.lugar{
+                            margin: 5px 0px 5px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inscrever{
+    background: @roxo;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    h3{
+        text-align: center;
+        color: @white;
+        span{
+            color: @yellow;
+        }
+    }
+    a{
+        color: @white;
+        border: 2px solid @white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        align-self: center;
+    }
+    a:hover{
+        background: @white;
+        color: @roxo;
+    }
+}
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    position: fixed;
+    top: -100%;
+    display: block;
+    transition: 350ms;
+}
+
+.modal{
+    width: 50%;
+    height: 60%;
+    background: #fff;
+    border: 1px solid @roxo;
+    border-radius: 20px;
+    margin: 80px auto 0 auto;
+    padding: 20px;
+    span{
+        float: right;
+        font-size: 35px;
+        color: @roxo;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover{
+            color: red;
+            transition: 350ms;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        align-items: center;
+        input{
+            align-self: center;
+            width: 100%;
+            height: 30px;
+            border: 1.5px solid @roxo;
+            border-radius: 20px;
+            padding-left: 15px;
+        }
+        label{
+            margin-bottom: 25px;
+            width: 100%;
+            align-self: center;
+            font-weight: bold;
+            color: @roxo;
+            p{
+                color: red;
+            }
+        }
+        button{
+            height: 50px;
+            border: 2px solid @roxo;
+            background: transparent;
+            padding: 0px 30px;
+            cursor: pointer;
+            color: @roxo;
+            font-weight: bold;
+        }
+    }
+    h4{
+        text-align: center;
+        color: red;
+    }
+}
